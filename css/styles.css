@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body {
+    margin:0;
+    padding: 0;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#page-container {
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff45;
+}
+
+#header {
+    color: #44c767;
+    padding-left: 50px;
+}
+#search, #video{
+    height: auto;
+    padding-left: 50px;
+}
+
+#results {
+    list-style: none;
+    padding-left: 0;
+}
+
+.css-input {
+    width: 250px;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: -50px 0px 0px rgba(66,66,66,.0);
+    text-shadow: -50px 0px 0px rgba(66,66,66,.0);
+}
+ .css-input:focus {
+     outline:none;
+}
+
+#addVideo {
+    width: 40px;
+    margin-top: 10px;
+    background-color:#44c767;
+    border-radius:24px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    padding:8px 23px;
+    text-decoration:none;
+    text-align: center;
+}
+#addVideo:hover {
+    background-color:#418223;
+}
+#addVideo:active {
+    position:relative;
+    top:1px;
+}
+
+.alert{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.fail{
+    color: red;
+}
+
+.success{
+    color: #3e9928;
+}
