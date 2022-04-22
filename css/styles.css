@@ -4,7 +4,7 @@ body {
     padding: 0;
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
-    background-image: url("../images/background.jpg");
+    background-image: url("/images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,25 +13,24 @@ body {
     display: flex;
     justify-content: center;
 }
-
 #page-container {
+    background-color: #ffffff37;
+}
+
+#page-container, #movie-list__container {
     width: 500px;
-    height: 600px;
-    background-color: #ffffff45;
-}
-
-#header {
-    color: #44c767;
-    padding-left: 50px;
-}
-#search, #video{
     height: auto;
-    padding-left: 50px;
+    text-align: center;
 }
 
-#results {
+#search-results, #movie-list-results {
     list-style: none;
     padding-left: 0;
+}
+
+#movie-list-results, #search-results {
+    color: rgb(245, 238, 238);
+
 }
 
 .css-input {
@@ -51,12 +50,21 @@ body {
      outline:none;
 }
 
-#addVideo {
-    width: 40px;
+#page-container__title, #movie-list__title{
+    color: rgb(150, 152, 154);
+}
+
+
+#videoInput{
+    margin-left: 110px;
+}
+
+.video-btn {
+    width: 60px;
     margin-top: 10px;
-    background-color:#44c767;
+    background-color:black;
     border-radius:24px;
-    border:1px solid #18ab29;
+    border:black;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -66,10 +74,10 @@ body {
     text-decoration:none;
     text-align: center;
 }
-#addVideo:hover {
-    background-color:#418223;
+.video-btn:hover {
+    background-color:#1C1C1C;
 }
-#addVideo:active {
+.video-btn:active {
     position:relative;
     top:1px;
 }
@@ -82,9 +90,17 @@ body {
 }
 
 .fail{
-    color: red;
+    color: #f30404db;
 }
 
 .success{
-    color: #3e9928;
+    color: #35d04c;
 }
+
+.alert, #page-container__title, 
+#movie-list__title, #movie-list-results,#search-results {
+    text-shadow: 2px 2px black;
+    line-height:2em;
+}
+
+

@@ -6,23 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/index.js"></script>
+        <script src="js/addMovie.js"></script>
+        <script src="js/deleteMovie.js"></script>
+        <script src="js/searchMovie.js"></script>
         <title>My Movie List</title>
     </head>
     <body>
         <div id="page-container">
-            <div id="header">
-                <h1>My Movie List</h1>
+            <div id="page-container__title">
+                <h1>Watched Movies -  Manager</h1>
             </div>
 
             <div id="video">
                 <p id="alertMsg" class="alert"></p>
-                <input type="text" class="css-input" id="videoInput" placeholder="Add a title">
-                <a href="#" id="addVideo">Add</a>
+                <input type="text" name="videoInput" class="css-input" id="videoInput" placeholder="Enter a title">
+                <a href="#" class="video-btn" id="addTitle">Add</a>
             </div>
 
             <div id="search">
                 <input type="text" class="css-input" id="autocomplete" placeholder="Search..."></input>
-                <ul id="results"></ul>
+                <ul id="search-results"></ul>
+                <a href="#" class="video-btn" id="removeTitle">Remove</a>
+            </div>
+
+            <div id="movie-list__container">
+                <h1 id="movie-list__title">Movies</h1>
+                <ul id="movie-list-results"></ul>
             </div>
         </div>
     </body>
